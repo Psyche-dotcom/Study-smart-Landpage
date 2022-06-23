@@ -1,0 +1,37 @@
+/*Primary color*/
+
+$LightBlue: #220e24;
+$DarkBlue: #342056;
+$Paper: #eff0fa;
+$Calmyellow: #fdb813;
+
+$white: hsl(0, 0%, 100%);
+
+$large_screen: 900px;
+$small_screen: 230px;
+
+$medium_screen: 650px;
+
+$medium_screenl: 1200px;
+
+@mixin large {
+  @media (min-width: $large_screen) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (min-width: $medium_screen) {
+    @content;
+  }
+}
+@mixin small {
+  @media (min-width: $small_screen) {
+    @content;
+  }
+}
+
+@mixin lmedium {
+  @media (min-width: $medium_screenl) {
+    @content;
+  }
+}
